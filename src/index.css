@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+
 @theme {
   --color-on-primary-fixed-variant: #574500;
   --color-surface-container-low: #f4f3f1;

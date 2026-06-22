@@ -3,7 +3,16 @@ import React, { useState, useEffect, useRef } from 'react'
 export default function App() {
   const [scrolled, setScrolled] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState('branches')
+  const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 })
+
   const sectionsRef = useRef([])
+  const navRefs = useRef({})
+  const navItems = [
+    { id: 'branches', label: 'The Branches', matchIds: ['bloom', 'miller', 'sterling', 'vance'] },
+    { id: 'values', label: 'Our Values', matchIds: ['values'] },
+    { id: 'footer', label: 'The Collection', matchIds: ['footer'] }
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +35,11 @@ export default function App() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('fade-in-up')
-          observer.unobserve(entry.target)
+          // Check which nav item's matchIds this matches
+          const matchedItem = navItems.find(item => item.matchIds.includes(entry.target.id))
+          if (matchedItem) {
+            setActiveSection(matchedItem.id)
+          }
         }
       })
     }, observerOptions)
@@ -35,10 +48,49 @@ export default function App() {
       if (section) observer.observe(section)
     })
 
+    // Observe specific timeline sections and other main sections
+    const targetIds = ['bloom', 'miller', 'sterling', 'vance', 'values', 'footer']
+    targetIds.forEach(id => {
+      const el = document.getElementById(id)
+      if (el) observer.observe(el)
+    })
+
     return () => {
       observer.disconnect()
     }
   }, [])
+
+  useEffect(() => {
+    const activeEl = navRefs.current[activeSection]
+    if (activeEl) {
+      setIndicatorStyle({
+        left: activeEl.offsetLeft,
+        width: activeEl.offsetWidth
+      })
+    }
+  }, [activeSection])
+
+  const handleNavClick = (e, id) => {
+    e.preventDefault()
+    const element = document.getElementById(id)
+    if (element) {
+      const offset = 80
+      const bodyRect = document.body.getBoundingClientRect().top
+      const elementRect = element.getBoundingClientRect().top
+      const elementPosition = elementRect - bodyRect
+      const offsetPosition = elementPosition - offset
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
+    // Set active section based on clicked link's mapping
+    const matchedItem = navItems.find(item => item.matchIds.includes(id))
+    if (matchedItem) {
+      setActiveSection(matchedItem.id)
+    }
+  }
 
   const addToRefs = (el) => {
     if (el && !sectionsRef.current.includes(el)) {
@@ -58,13 +110,16 @@ export default function App() {
           <span className="font-display-lg text-headline-md text-primary tracking-tight">
             The Heritage Archive
           </span>
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="relative hidden md:flex items-center space-x-8">
             <div
-              className="group relative"
+              ref={(el) => (navRefs.current['branches'] = el)}
+              className={`group relative z-10 transition-colors duration-300 ${
+                activeSection === 'branches' ? 'text-primary font-semibold' : 'text-on-surface-variant hover:text-primary'
+              }`}
               onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}
             >
-              <button className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm flex items-center gap-1">
+              <button className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm flex items-center gap-1 cursor-pointer">
                 The Branches <span className="material-symbols-outlined text-sm">expand_more</span>
               </button>
               <div
@@ -73,27 +128,49 @@ export default function App() {
                 }`}
               >
                 <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-xl shadow-xl p-4 w-48 space-y-2">
-                  <a className="block p-2 hover:bg-surface-container-low rounded-lg transition-colors text-label-sm" href="#bloom">
+                  <a className="block p-2 hover:bg-surface-container-low rounded-lg transition-colors text-label-sm text-on-surface-variant hover:text-primary" href="#bloom" onClick={(e) => handleNavClick(e, 'bloom')}>
                     The Blooms
                   </a>
-                  <a className="block p-2 hover:bg-surface-container-low rounded-lg transition-colors text-label-sm" href="#miller">
+                  <a className="block p-2 hover:bg-surface-container-low rounded-lg transition-colors text-label-sm text-on-surface-variant hover:text-primary" href="#miller" onClick={(e) => handleNavClick(e, 'miller')}>
                     The Millers
                   </a>
-                  <a className="block p-2 hover:bg-surface-container-low rounded-lg transition-colors text-label-sm" href="#sterling">
+                  <a className="block p-2 hover:bg-surface-container-low rounded-lg transition-colors text-label-sm text-on-surface-variant hover:text-primary" href="#sterling" onClick={(e) => handleNavClick(e, 'sterling')}>
                     The Sterlings
                   </a>
-                  <a className="block p-2 hover:bg-surface-container-low rounded-lg transition-colors text-label-sm" href="#vance">
+                  <a className="block p-2 hover:bg-surface-container-low rounded-lg transition-colors text-label-sm text-on-surface-variant hover:text-primary" href="#vance" onClick={(e) => handleNavClick(e, 'vance')}>
                     The Vances
                   </a>
                 </div>
               </div>
             </div>
-            <a className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm" href="#values">
+            <a
+              ref={(el) => (navRefs.current['values'] = el)}
+              className={`transition-colors duration-300 font-label-sm relative z-10 pb-1 ${
+                activeSection === 'values' ? 'text-primary font-semibold' : 'text-on-surface-variant hover:text-primary'
+              }`}
+              href="#values"
+              onClick={(e) => handleNavClick(e, 'values')}
+            >
               Our Values
             </a>
-            <a className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm" href="#footer">
+            <a
+              ref={(el) => (navRefs.current['footer'] = el)}
+              className={`transition-colors duration-300 font-label-sm relative z-10 pb-1 ${
+                activeSection === 'footer' ? 'text-primary font-semibold' : 'text-on-surface-variant hover:text-primary'
+              }`}
+              href="#footer"
+              onClick={(e) => handleNavClick(e, 'footer')}
+            >
               The Collection
             </a>
+            {/* Sliding Underline */}
+            <div
+              className="absolute bottom-0 h-0.5 bg-primary transition-all duration-300 ease-out"
+              style={{
+                left: `${indicatorStyle.left}px`,
+                width: `${indicatorStyle.width}px`
+              }}
+            />
           </div>
         </div>
       </nav>
