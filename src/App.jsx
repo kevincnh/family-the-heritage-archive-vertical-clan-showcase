@@ -50,12 +50,12 @@ export default function App() {
     <div className="bg-background text-on-background font-body-md overflow-x-hidden min-h-screen">
       {/* TopAppBar */}
       <nav
-        className={`fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md transition-all duration-300 ${
+        className={`fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md transition-all duration-300 ${
           scrolled ? 'py-2 shadow-md' : 'py-4 shadow-sm'
         }`}
       >
         <div className="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
-          <span className="font-display-lg text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight">
+          <span className="font-display-lg text-headline-md text-primary tracking-tight">
             The Heritage Archive
           </span>
           <div className="hidden md:flex items-center space-x-8">
