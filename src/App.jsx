@@ -137,7 +137,7 @@ export default function App() {
             <div className="relative rounded-[2rem] overflow-hidden aspect-[21/9] soft-elevation group">
               <img
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrfmhU0hzw_4glyngD-HYrq4us8orWUiP0ROzQINjaNFjGJOKHzYlHdkjoJNARLhkVmdZvGpKb8cNWTpQOWXXdyQh2ZIIYBdkUNQF7vBkZBirsVKEZzGkBqoPxRSvdfAq9T-1zwwzQ1tCaoZn7Hd-XQdWAFAMBupyzuV4iuFIAkEdBl3F3QFb8x7fvuWwrqvTflO0Zp-IGyM87sBXp-gliAq9wEEwgJucVQbAuFYJ0SPs0zzhSkT8ui4T12DYOFEGWWMiffqJXTyo"
+                src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=80"
                 alt="The Bloom family roots landscape"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
@@ -157,21 +157,21 @@ export default function App() {
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden soft-elevation border border-white/20">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhS46KnKWVMsC-l5M1HiAEryWQ_5t6kV7lsKpp2lXtuVF9tb4jpUKI6YeavzQgxbsxtZihR8kYh2bdWOeVkc38NnmTYkrIdshBZ4-HsFHDUsnMSrtAlVLlX_KQzqg5Q_R5-z6FgE6xU6TtBxso1ddd9IWUg-0SjTT-3hMyyY-9G39rTcocWrSR6Kn6CyA_0S0ncTyjKoxblMrw7FIIHaBYv_WjdeG8NW3zsEIgKwxbWJYqf2tgzSnq3-Xk7LSYivRiTz0rUry1Kl0"
+                    src="https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=1200&q=80"
                     alt="Sarah and David"
                   />
                 </div>
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden soft-elevation border border-white/20">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh36_m-h6oscLmCrPQsUj_Th2pKGPsvcrWVWyUe1xukgUAWJr85U6TukHnPjJx0btmRFPCfIPX6dAakGc7YBwUUAhVkJhG9bFVGASQVJcV937HnrY4jpBq09CoUPEvwISGGzDu9EQefxaKPbBLjYVqz6K3Z_ViCKaOU8EOUff9zkte9kYso_P5umE1ezAn2_7QAtn43pv5lae7V57zuCu8X1O48w_cbQAylg_tojuQ4GTXF0CMyYfOCYb5STTeZXbZ74HB3YK5P7s"
+                    src="https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?auto=format&fit=crop&w=800&q=80"
                     alt="New life"
                   />
                 </div>
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden soft-elevation border border-white/20">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4W5c5MFn9UPcrZLe-f177FchJwyZZQz0migjs8z1XOKqBsrgZmaxs-Nm5axGGTD9EiDBpI8VXKc_i13xcAeqYkxLOu1ym3k6D1cy3TRt3KkaMwQRFpU0cz7CuIDAUNgLiRpSTOXTxTapXknwrYaE1pw0UpYoq9q3lI4MQQg5z_CFsYn-dgCjW-m8SfjtfXoYexSk6dNH2sp7X3yx-8lyUVhOy0ykWjEPFnPjOnZyqhSHkIWURgWAZq5Mpclu6SBMNC65rnNnVb9E"
+                    src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80"
                     alt="Celebration"
                   />
                 </div>
@@ -197,7 +197,7 @@ export default function App() {
             <div className="relative rounded-[2rem] overflow-hidden aspect-[21/9] soft-elevation group">
               <img
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC-A2Nosnh9aHV9tDVcRgOs1bAGIZE86LeKDIF8QsacXhTKbXUzHVDibivRHB1hphN2yLwko_DowgdD5DJex7-xKmknE04QOsgFbVtOvech2rL7qEcPIvXC4XdfSybs1eiMTG4BxpGC6F-YDaazT-qvKi6Enw2t0cLkMixs5oOtDQZhyOtQ1c-4FyXbK39-wLV8ewkYv9aOCimMAdmmUPQbTtcKvU76UArDi1wODFVPSFoQ04kMxogZ_puZ8FaCvY0JlLpwxFAktA"
+                src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1200&q=80"
                 alt="Coastal forest landscape"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
@@ -207,21 +207,21 @@ export default function App() {
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden soft-elevation">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz_L2C5hMbUBAzEFNopBIM1j-BZqC9XoYsE-TS_R5kC2x5IPKXKEDOc8DcTJizIOtKv4qMH5A_6u1QjNRTBO1CMmH6T5bqiuqS2YmtkdyBRYHizDfasgcegMyujaMnrO-Lr6o8cTND_yPdpHYqitEEE3mGRqExO-1FexOn1RzSFEQmvbxpJLb0LKsA0NpSCY2CoOfNqZE892QLIfkcYYyOAKbb_LAHYdjw-ki_Bl80rqJUmPLcke8Y6C5UMu8ucj5sRauE0FFJuoI"
+                    src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80"
                     alt="Elder couple"
                   />
                 </div>
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden soft-elevation">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1h88HwPG0E6gfwen217Ewz1NctqPiX9Hd9jZdcKvyqSmT3nY0NC6It7kZ89urp2qDe_a3700zlvTLbhltiFJ2raIn25ZBSB9pMHZEA03jr3ALld-p6lZCUFM7GpJ3ZhyzyZbef8pVohumfYn1vG_dMRVRZ_NzCYv-BKgvavG8rm_GvemzI_Sw2n7fVNWEEhEZ85NZOE821O-uJx7xJIj8NsFiDZi-KfFtxlKhrNeNKpgvDqJd1ZbTHF0pcbQNvAieQdx4yDtpJoE"
+                    src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?auto=format&fit=crop&w=800&q=80"
                     alt="Vintage gear"
                   />
                 </div>
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden soft-elevation">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCjteQ2qCngxTH9cdk9ePAP5DxuyOy92SwBHrbUQ8XNrnS5LHHic6YDOW3d29k-Ck9lrV9hr5MdhKVINAo4Y-hHFilil8_NEJHVuxAc6o9hvalV_u6y2NE2NwLtGxhWKM5kjx_VjsuwZUzA8xFqXfsmk_mn5AuF8ONaCH9RpbDE09IeNRNSHBiSVVDLX1LyOYDPd9yX4au25NUnF2sG01frD5vbsTQHaLJsnR2Xn6IFjqv85oxliKhSwNar3zRhfBtualGJJm1Seo"
+                    src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?auto=format&fit=crop&w=800&q=80"
                     alt="Family letters"
                   />
                 </div>
@@ -257,7 +257,7 @@ export default function App() {
             <div className="relative rounded-[2rem] overflow-hidden aspect-[21/9] soft-elevation group">
               <img
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqOBXNcQChalQOGpvqOrKRBlFqAp8SvFt6Ru4TIojjUb9YZu1tL0uB7ToDgD8yzzm37znTvZYFm2D_KlRNZwXxs1Cx5D9Cs3jSs8Fg4npoKcOyWC4Yi607h9jPG_HZ9362ZVEKAclcBtp_Z5Zy05gfIZgdeTZq3na1QDB69bM4BhjRyyBPjPHXRuqmuy4g8POWhs5VMdUFFpTrCED8JbdLOHK92Tr-Vu2qdCSz2gnyCgGON_cby3YVWuWDX1ytLGRiRqp1ek53Rzk"
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
                 alt="Mountain range landscape"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
@@ -277,21 +277,21 @@ export default function App() {
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden soft-elevation">
                   <img
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo2z1wqD7zQFGGKO--VTvvq1aYBSEQlBRJfjM77b4hE_GzuYOL248bxzCVSAgSfUr_eUODLelbN5Qi9Wnx1LdAjfa_3Wwfc84mMoIMk_-rz03xonHJo_y89Qw6qO1pAYQFhSzW2_uXos3XTB-9N0_tNTrcUKg_y71fCQZRam2wjLr9pz_rYldKT0sj5vfzjfX_f79OcK6E5nRyBaB_EECJ4Pe7sV63DXyHDPrHTj-Ge0vtP26uJ1u4wN04PhOuaRMxfvAHSYaeCIU"
+                    src="https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?auto=format&fit=crop&w=1200&q=80"
                     alt="Sterling ancestors"
                   />
                 </div>
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden soft-elevation">
                   <img
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdaXqtn-JaiyGPl_eBwOCcfRfgJ8P2SfypwLpf1M0j60kQEcZzpTXkLcOGuJjYUPeDxCN9lrTscCbqnzkIqWURgd4cS0OJCFutrpjIyIuiE02lOFb6_4Ovn-IJrcg8So-EGn63IOkUlqPU2RDHRJUo_n6aYwaF4nM-xsHk2jv8tNTzVHsYeTF_ljozbCfbX05qJsaaNatUYbrpioAaoyzvwXCJTGuOO9TDHI3KgIHCA2NPWtcu7PFbEp9o8bbMtlHj_K6KfvTJtIg"
+                    src="https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=1200&q=80"
                     alt="Old farmhouse"
                   />
                 </div>
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden soft-elevation">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmQVulApY64fVb1AsO8V_2EHHuwhZycaIIzVJBZcwFJ-996AilMK179ZlvpuFQve6szz-TRd4YIQaT0HJtsWobwno_mmD1H4oSLLU1s-6r3dFuiUWD_WcuCtN6qG_cLUNBbDC7MHkqz-4THTyMT6jU6KrfeBxLLG-ZcOXIE2C-P1l6mX3g4aFIC8VrHwN3tsEJQkJSZI_f-7hdsg_JwAQFSbvZyfeKtEcFTO5wYiXEBXRXNm_DjmbjuVnX1MXVf0yGW56UtsGoWXE"
+                    src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?auto=format&fit=crop&w=800&q=80"
                     alt="Pocket watch"
                   />
                 </div>
@@ -319,7 +319,7 @@ export default function App() {
                 <div className="aspect-square rounded-3xl overflow-hidden soft-elevation">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt11czBUJpy9hpps7IepKtrkx3Au3OfzjRBlwKhMa87l__KlADKC7y4MWaIurY489PtFG-0i_ND_idZLCjrvCj1B_fISa4cihYkkUrFCpWlTX0A-0uDjORtCxAJWHzb-Jh5AGDU1GIzYIbwxssfjLxK_GrUalWU5TUOo27OVlNkJlaC3y-L36c6QDMt4BA3UL6k_-3Rnie7UYxiNvJaBm8Okjw8GqrBl51qoQ-3-21L7onwktO8CxzjctHJAt6fHEQwHdsniUc3I0"
+                    src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80"
                     alt="Modern creative space"
                   />
                 </div>
